@@ -1,0 +1,215 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Georgia', monospace;
+  background-color: rgb(255, 254, 241);
+  color: black;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  padding: 10px 5%;
+  background-color: black;
+  color: rgb(245, 169, 65);
+  font-size: 20px;
+}
+#navBox {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 100%;
+}
+.logo:hover {
+  cursor: pointer;
+}
+#navMenu {
+  width: max(500px, 40%);
+  align-self: center;
+  color: rgb(245, 169, 65);
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  align-items: center;
+}
+.navMnLink {
+  color: rgb(245, 169, 65);
+  text-decoration: none;
+}
+.navMnLink:hover {
+  cursor: pointer;
+  color: white;
+}
+.WAIcon {
+  width: 25px;
+  margin-right: 10px;
+}
+.WABttn {
+  border: 1px solid rgb(245, 169, 65);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display:flex;
+  align-items: center;
+}
+.WABttn:hover {
+  background-color: rgb(245, 169, 65);
+  color: black;
+}
+#mobMenu {
+  height: 100%;
+  width: 25px;
+  border: 1px solid rgb(245, 169, 65);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#mobMenu span {
+  height: 10px;
+  display: grid;
+  place-content: center;
+}
+#mobMenuDisp {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+#mobMenuCont {
+  height: 100%;
+  margin-left: 90px;
+  padding: 25px;
+  background-color: black;
+}
+.mobMenuLink {
+  margin: 15px 0;
+  display: block;
+  text-decoration: none;
+  color: rgb(245, 169, 65);
+}
+.mobMenuCerrar {
+  margin-bottom: 25px;
+}
+#DAVDEV {
+  position: relative;
+  height: auto;
+  min-height: 25px;
+  width: 100%;
+  background-color: rgb(10, 50, 150);
+  color: white;
+  display: grid;
+  place-content: center;
+  font-size: 1rem;
+}
+#DAVDEV a {
+  color: rgb(100, 250, 250);
+}
+
+
+
+#redCont {
+  position: fixed;
+  top: 250px;
+  left: 15%;
+  right: 15%;
+  height: auto;
+  text-align: center;
+  background-color: rgba(200, 50, 50, 0.75);
+  color: white;
+  font-size: 15px;
+  border-radius: 25px;
+  display: none;
+  padding: 0 15px 15px 15px;
+  z-index: 5;
+}
+#redCont span{
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  padding: 1px 15px;
+  border-radius: 5px;
+}
+#redCont span:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+#redCont a {
+  color: rgb(100, 250, 250);
+}
+
+
+
+footer {
+  height: auto;
+  min-height: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+}
+.logoInsta, .logoFace {
+  width: 40px;
+  margin: 0 10px 15px 0;
+}
+.logoInsta:hover, .logoFace:hover {
+  cursor: pointer;
+}
+footer a {
+  color: rgb(230, 142, 131);
+}
+
+
+
+/* MEDIAS MEDIAS MEDIAS */
+/* 651px ++ */
+@media (min-width: 651px) {
+  #mobMenu {
+    display: none;
+  }
+}
+/* TABLET - 650px */
+@media (max-width: 650px) {
+  body {
+    font-size: 14px;
+  }
+  #navMenu {
+    display: none;
+  }
+  nav {
+    height: 75px;
+    z-index: 2;
+  }
+  #DAVDEV {
+    position: sticky;
+    top: 75px;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1;
+  }
+  footer {
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .WABttn {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,166 @@
+#latMenu {
+  position: fixed;
+  top: 300px;
+  left: 0;
+  width: 125px;
+  text-align: center;
+}
+#latMenu > hr {
+  width: 85px;
+  border: 1px solid black;
+}
+.latBttn {
+  width: 80px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: rgb(245, 169, 65);
+  background: none;
+  border: none;
+}
+.latBttn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(245, 169, 65);
+  box-shadow: 2px 2px 5px black;
+}
+
+
+
+#menuTitle {
+  height: 150px;
+  text-align: center;
+  margin-top: 25px;
+}
+#menuDisclaimef {
+  font-size: 14px;
+}
+#pastLink, #tartasLink, #otrosLink {
+  position: relative;
+  top: -115px;
+}
+
+
+
+#pastelesCont, #tartasCont, #otrosCont {
+  margin: 5px 130px 100px 130px;
+  height: max-content;
+  text-align: center;
+}
+.secTitle {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.precios {
+  width: fit-content;
+  max-width: 510px;
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 15px;
+  justify-content: center;
+}
+.precios p {
+  margin: 7px 0;
+}
+.preciosItem {
+  width: 115px;
+}
+.sabores {
+  width: 300px;
+  margin: 5px auto 25px auto;
+  text-align: center;
+}
+.sabores P {
+  margin: 5px 0;
+  text-align: center;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.sabores span {
+  width: 100px;
+  text-align: center;
+}
+.menuCont {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  place-content: center;
+}
+.menuItem {
+  height: 250px;
+  flex: 0.5 0 200px;
+  text-align: center;
+}
+.menuImg {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -1px black;
+}
+.menuDescrip {
+  font-size: 12px;
+  margin: 5px 0;
+}
+.menuBttn {
+  background-color: black;
+  border: 1px solid rgb(245, 169, 65);
+  color:rgb(245, 169, 65);
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 1px 7px;
+}
+.menuBttn:hover {
+  cursor: pointer;
+  background-color: rgb(245, 169, 65);
+  color: black;
+  box-shadow: 2px 2px 5px black;
+}
+
+
+
+#contacto {
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  row-gap: 15px;
+}
+#contacto div {
+  text-align: right;
+  margin-right: 15px;
+}
+#contactBttn {
+  width: 180px;
+  background-color: black;
+  border: 1px solid rgb(245, 169, 65);
+  padding: 5px;
+  color:rgb(245, 169, 65);
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  border-radius: 5px;
+  font-size: 19px;
+  justify-content: space-evenly;
+}
+#contactBttn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(245, 169, 65);
+}
+
+
+/* MEDIAS MEDIAS MEDIAS */
+/* MOBILE - 544px */
+@media (max-width: 544px) {
+  #latMenu {
+    display: none;
+  }
+  #pastelesCont, #tartasCont, #otrosCont {
+    margin: 5px 10px 50px 10px;
+  }
+}
