@@ -33,20 +33,23 @@ main {
 }
 .favsImgCont {
   width: 90%;
-  max-width: 650px;
+  max-width: 850px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 25px;
+  column-gap: 30px;
 }
 .favsItemCont {
-  margin: 0 10px;
   flex: .5 0 150px;
+  display: grid;
+  justify-content: center;
 }
 .favsImg {
-  height: 150px;
-  width: 150px;
+  height: auto;
+  width: 100%;
+  max-width: 250px;
   border-radius: 5px;
 }
 .favsName {
@@ -54,6 +57,7 @@ main {
 }
 .favsData{
   width: 100%;
+  max-width: 250px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
