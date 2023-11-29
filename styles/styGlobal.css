@@ -20,12 +20,12 @@ body {
   height: auto;
   min-height: 25px;
   width: 100%;
-  background-color: rgb(50, 75, 200);
-  color: whitesmoke;
-  display: grid;
-  place-content: center;
   padding: 1px 5px;
   font-size: 1rem;
+  color: black;
+  background-color: var(--blueContrast);
+  display: grid;
+  place-content: center;
 }
 #DAVDEV a {
   color: rgb(50, 75, 180);
