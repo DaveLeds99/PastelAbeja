@@ -10,6 +10,9 @@ body {
 * {
   box-sizing: border-box;
 }
+:root {
+  --blueContrast: rgb(75, 185, 250);
+}
 
 
 
@@ -25,7 +28,10 @@ body {
   font-size: 1rem;
 }
 #DAVDEV a {
-  color: rgb(100, 250, 250);
+  color: rgb(50, 75, 180);
+}
+#DAVDEV a:hover {
+  color: white;
 }
 nav {
   position: sticky;
@@ -136,7 +142,8 @@ nav {
   right: 15%;
   height: auto;
   text-align: center;
-  background-color: rgba(150, 50, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
   color: white;
   font-size: 15px;
   border-radius: 25px;
@@ -158,8 +165,7 @@ nav {
 }
 #redCont a {
   padding: 0 5px;
-  background-color: black;
-  color: rgb(100, 250, 250);
+  color: var(--blueContrast);
 }
 
 
