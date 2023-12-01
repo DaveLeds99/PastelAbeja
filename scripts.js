@@ -65,7 +65,7 @@ function redBox(p) {
     else console.log("ERROR - RedBox no identificado");
 }
 function timerControl(stat) {
-    seconds = 7;
+    seconds = 15;
     redTime.innerHTML = `Este cuadro se cerrará en - ${seconds}`;
     if (stat == "stop") {
       clearInterval(timer);
