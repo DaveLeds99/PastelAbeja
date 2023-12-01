@@ -28,7 +28,8 @@ body {
   place-content: center;
 }
 #DAVDEV a {
-  color: rgb(50, 75, 180);
+  padding: 0 7px;
+  color: rgb(51, 57, 61);
 }
 #DAVDEV a:hover {
   color: white;
@@ -166,6 +167,9 @@ nav {
 #redCont a {
   padding: 0 5px;
   color: var(--blueContrast);
+}
+#redCont a:hover {
+  color: rgb(150, 250, 250);
 }
 
 
